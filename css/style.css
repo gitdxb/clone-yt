@@ -2,3 +2,46 @@ body, html {
     font-family: Roboto, Arial, sans-serif;
     width: 100%;
 }
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    background-color: #ddd;
+    align-items: center;
+}
+#leftnav {
+    display: flex;
+}
+#leftnav #title {
+    font-size: 20px;
+    font-weight: bold;
+}
+#ae {
+    font-size: 10px;
+    opacity: 0.5;
+    margin-left: 4px;
+}
+.fas, .fab {
+    font-size: 1.1rem;
+    color: #2d2e3a;
+    opacity: 0.7;
+}
+.fa-bars {
+    margin: 0 20px;
+}
+.fa-youtube {
+    color: red;
+    margin-right: 5px;
+    font-size: 1.8rem;
+    margin-top: -5px;
+}
+#rightnav i {
+    margin-right: 1.5rem;
+    height: 100%;
+    vertical-align: middle;
+}
+.fa-adn {
+    font-size: 1.9rem;
+    color: orchid;
+}
