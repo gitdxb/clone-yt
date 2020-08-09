@@ -3,7 +3,9 @@ body, html {
     width: 100%;
     box-sizing: border-box;
 }
-
+.wrap {
+    width: 100%;
+}
 .topnav {
     display: flex;
     justify-content: space-between;
@@ -41,7 +43,7 @@ body, html {
 
 #rightnav {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     justify-content: flex-end;
     align-items: center;
 }
@@ -53,19 +55,41 @@ body, html {
     font-size: 1.9rem;
     color: rgb(129, 21, 126);
 }
-.search-container {
+/* .search-container {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     margin-right: 1rem;
+} */
+/* .searchTerm {
+    margin: 0 auto;
+    width: 50%;
+    height: 25px;
 }
 button {
-    background: transparent;
+    background: #ddd;
     border: 0;
+    height: 25px;
     font-size: 1.2rem;
     opacity: .7;
     display: flex;
     justify-content: flex-end;
+} */
+.search-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+}
+.search-container .searchTerm {
+    width: 33rem;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    border: 1px solid rgba(221, 221, 221, 0.26);
+
+}
+.search-container button {
+    padding: .4rem 2rem;
+    border: 1px solid rgba(221, 221, 221, 0.26);
 }
 main, aside, .comment {
     background-color: rgba(221, 221, 221, 0.315);
@@ -91,6 +115,7 @@ h1, h2, h3 {
 }
 .cta {
     display: inline-flex;
+    margin-right: 1rem;
 }
 .cta p {
     margin-left: 8px;
@@ -139,6 +164,7 @@ h1, h2, h3 {
     font-size: 13px;
     font-weight: 550;
     margin-right: 15px;
+    border: 0;
 }
 .fa-bell {
     align-self: center;
@@ -356,3 +382,41 @@ footer {
     opacity: 1;
     font-size: 15px;
 } 
+
+@media screen and (min-width: 900px) {
+  .wrap {
+      display: flex;
+      flex-wrap: wrap;
+  }
+  main {
+      width: 65%;
+      height: 50%;
+  }
+  .mainVideo {
+      width: 100%;
+      height: 30em;
+  }
+  aside {
+      width: 27.88%;
+      padding-top: 3%;
+  }
+  .comment {
+      width: 65%;
+      margin-top: -30.1em;
+    padding-top: 3%;
+    }
+.publicComment {
+    padding-bottom: 0;
+}
+}
+@media screen and (max-width: 500px) {
+form {
+    display: none;
+}
+.search-container button {
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
+    margin-left: 80px;
+}
+}
