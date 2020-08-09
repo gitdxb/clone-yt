@@ -24,7 +24,7 @@ body, html {
     opacity: 0.5;
     margin-left: 4px;
 }
-.fas, .fab {
+.fas, .fab, .far {
     font-size: 1.1rem;
     color: #2d2e3a;
     opacity: 0.7;
@@ -98,9 +98,62 @@ h1, h2, h3 {
 .fa-thumbs-down {
     transform: scaleX(-1);
 }
-
-
-
+#channelDes {
+    width: 100%;
+    padding: 1.5em 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+}
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar {
+    display: flex;
+}
+.avatar img {
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.avatar p {
+    align-self: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.avatar span {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: .8;
+}
+.fa-check-circle {
+    font-size: 11px;
+}
+.subs {
+    display: flex;
+}
+.subs button {
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 550;
+    margin-right: 15px;
+}
+.fa-bell {
+    align-self: center;
+}
+#description, #show {
+    font-size: 14px;
+    margin-left: 4.4em;
+    line-height: 1.5;
+}
+#show {
+    font-weight: bold;
+    opacity: .5;
+    font-size: 12.5px;
+    padding-top: 2em;
+}
 
 
 
