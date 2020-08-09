@@ -67,7 +67,7 @@ button {
     display: flex;
     justify-content: flex-end;
 }
-main, aside {
+main, aside, .comment {
     background-color: rgba(221, 221, 221, 0.315);
     padding: 1.5em;
 }
@@ -160,6 +160,7 @@ h1, h2, h3 {
     align-items: center;
     position: relative;
     top: -40px;
+    margin-bottom: -35px;
 }
 #autoplay {
     display: inline-flex;
@@ -229,11 +230,129 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /* Sidebar stylesheet */
+
 .playlist {
     display: flex;
+    margin-bottom: .5rem;
+    width: 100%;
 }
-
-
+.title, .channelTitle, .liveNow {
+    margin-top: -1.2rem;
+    margin-left: .5rem;
+    line-height: 1.4;
+}
+.title {
+    font-size: 13.5px;
+    font-weight: bold;
+    color: #2d2e3a;
+}
+.channelTitle {
+    font-size: 12.5px;
+    opacity: .7;
+}
 footer {
     padding: 1.5em;
 }
+.liveNow {
+    color: rgb(216, 12, 12);
+    font-size: 12px;
+    border: 1px solid rgb(216, 12, 12);
+    padding: 3px;
+    border-radius: 4px;
+}
+.vid1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+    padding-bottom: 15px;
+}
+#showmore {
+    width: 100%;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid rgb(14, 118, 255);
+    color: rgb(14, 118, 255);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+#comment-head {
+    display: flex;
+    margin-top: -30px;
+}
+#comment-head i {
+    margin-left: 30px;
+}
+#sort {
+    font-size:14px;
+    opacity: .7;
+    font-weight: bold;
+}
+.publicComment {
+    display: flex;
+    padding: 30px 0;
+}
+.comAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8px;
+    height: 8px;
+    padding: 20px;
+    border: 1px solid rgb(189, 11, 11);
+    border-radius: 50%;
+    margin-right: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(189, 11, 11);
+}
+#addCom {
+    font-size: 14px;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.548);
+    margin-bottom: 20px;
+    width: 100%;
+    opacity: .7;
+}
+.comImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.comBlock {
+    margin-left: 20px;
+}
+.comBlock h3 {
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 0;
+    padding-bottom: 10px;
+    
+}
+.comBlock span {
+    opacity: .5;
+    font-weight: 400;
+}
+.comBlock p {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+.comBlock .cta i, .comBlock .cta p {
+    opacity: .5;
+    margin-right: 10px;
+    font-size: 13px;
+}
+.replies {
+    display: flex;
+    color: rgba(18, 96, 241, 0.952);
+    font-weight: bold;
+    font-size: 11px;
+}
+.fa-sort-down {
+    margin-right: 5px;
+    color: rgba(18, 96, 241, 0.952);
+    opacity: 1;
+    font-size: 15px;
+} 
